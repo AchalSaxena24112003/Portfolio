@@ -18,23 +18,24 @@ header {
 .container {
   max-width: 1200px;
   width: 90%;
+  margin: auto;
 }
 
 /* ////........Navbar.......//// */
 
 .navbar {
-  position: fixed;
+  position: relative;
   width: 100%;
   z-index: 500;
+  
 }
+
 
 .navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 64px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .menu-items {
@@ -108,6 +109,7 @@ header {
 .about-me {
   background-color: #342B9E;
   padding: 6rem 0;
+  width: 100%;
 }
 
 .about-me .about-heading {
@@ -303,6 +305,7 @@ header {
 .portfolio {
   background: #141414;
   padding: 6rem 0;
+  width: 100%;
 }
 
 .proj-heading h1 {
@@ -493,13 +496,23 @@ header {
 .contact {
   background: #141414;
   position: relative;
-  height: 92vh;
+  align-self: center;
+  height: 94vh;
   border: 2px solid #FFE600;
 border-radius: 10px;
-/* width: screen; */
-max-width: screen;
-
+margin-top: 15px;
+margin-bottom: 15px;
+margin-left: -150px;
+margin-right: -150px;
+width: 100%;
 }
+#contact-me {
+  width: 100%; /* Adjust the width as needed */
+  max-width: 1400px; /* Adjust the maximum width as needed */
+  height: 400px; /* Adjust the height as needed */
+  margin: 0 auto; /* This centers the div horizontally */
+}
+
 
 .contact-content {
   position: absolute;
@@ -561,10 +574,15 @@ max-width: screen;
 
   .skills {
     width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 
   .skills-bar .bar .progress-line {
     width: 100%;
+    justify-content: center;
+    align-items: center;
+  
   }
 
   .work-arrow {
@@ -628,6 +646,8 @@ max-width: screen;
 
   .skills {
     width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 
   .skills-bar .bar .progress-line {
@@ -733,3 +753,20 @@ max-width: screen;
     height: 90vmax;
   }
 }
+/* Add this CSS for mobile view */
+@media screen and (max-width: 767px) {
+  #skills {
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the division horizontally */
+  }
+}
+  /* Skills section styles for mobile */
+  @media only screen and (max-width: 600px) {
+    .skills {
+      width: 90%; /* Adjust as needed */
+      margin: 10px auto;
+      align-self: center;
+    }
+  }
+
+
