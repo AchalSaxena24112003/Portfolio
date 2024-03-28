@@ -24,11 +24,10 @@ header {
 /* ////........Navbar.......//// */
 
 .navbar {
-  position: relative;
-  width: 100%;
-  z-index: 500;
-  
-}
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+  }
 
 
 .navbar-container {
@@ -556,6 +555,11 @@ width: 100%;
   color: #f0f0e6;
 }
 
+
+/* Arnab */
+body{
+    background: #141414;
+}
 /* ////......Media query......//// */
 
 @media (max-width: 500px) {
@@ -628,9 +632,17 @@ width: 100%;
   .contact-content {
     width: 100%;
   }
+  .skills-bar{
+    /* padding-left: 100px; */
+    width: 80dvw;
+  }
+  .bar{
+    margin-left: 21%;
+  }
 }
 
 @media (min-width: 501px) and (max-width: 768px) {
+    
   html {
     font-size: 65%;
   }
@@ -697,9 +709,17 @@ width: 100%;
   .contact-content {
     width: 100%;
   }
+  .skills-bar{
+    /* padding-left: 100px; */
+    width: 80dvw;
+  }
+  .bar{
+    margin-left: 21%;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
+
   html {
     font-size: 70%;
   }
@@ -746,6 +766,13 @@ width: 100%;
   .contact-content {
     width: 100%;
   }
+  .skills-bar{
+    /* padding-left: 100px; */
+    width: 80dvw;
+  }
+  .bar{
+    margin-left: 21%;
+  }
 }
 
 @media (orientation: landscape) and (max-height: 500px) {
@@ -762,11 +789,13 @@ width: 100%;
 }
   /* Skills section styles for mobile */
   @media only screen and (max-width: 600px) {
+    /* .navbar{
+        width: 100%;
+      } */
     .skills {
       width: 90%; /* Adjust as needed */
       margin: 10px auto;
       align-self: center;
     }
+  
   }
-
-
